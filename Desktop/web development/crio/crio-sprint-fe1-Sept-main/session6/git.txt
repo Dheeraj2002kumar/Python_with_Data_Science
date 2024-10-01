@@ -1,0 +1,22 @@
+git clone <ssh_link>
+
+git branch <branch_name> 
+
+git branch
+
+git add <file_name>
+git add .
+
+git commit -m "Added northern cities"
+
+git push origin <branch_name>
+
+git checkout <branch_name>
+
+git merge <branch_name>
+
+git pull origin <branch_name>
+
+
+Provides the info of origin alias
+git remote -v

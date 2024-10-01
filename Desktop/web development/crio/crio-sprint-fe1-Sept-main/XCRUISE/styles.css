@@ -1,0 +1,266 @@
+* {
+  margin: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 51);
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  display: flex;
+  width: 20rem;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero {
+  background-image: url("https://github.com/Mohak-Trivedi/xCruise/blob/main/assests/hero-cruise.png?raw=true");
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-shadow: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero div {
+  text-align: center;
+}
+
+button {
+  background-color: rgba(240, 87, 24, 1);
+  color: white;
+  border: 0px;
+  padding: 10px 30px;
+  border-radius: 15px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid orange;
+  margin: 20px;
+  padding-left: 10px;
+  gap: 10px;
+}
+
+.popular {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pills {
+  display: flex;
+}
+
+.pills div {
+  display: flex;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.pills div img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.banner {
+  background-image: url("../images/caribbean.webp");
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+  position: relative;
+}
+
+.banner div {
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  bottom: 0px;
+  left: 0px;
+  color: white;
+  box-shadow: 40px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-sizing: border-box;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+  margin: 20px;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+}
+
+.card div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact hr {
+  width: 100px;
+  margin: auto;
+  border: 2px solid orange;
+}
+
+.contact_info {
+  display: flex;
+  margin: 20px;
+  gap: 10px;
+}
+
+.contact_info div {
+  width: 50%;
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+.contact_info h4 {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: rgb(0, 0, 51);
+  color: white;
+}
+
+footer h3 {
+  color: orange;
+}
+
+footer section {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  width: 25px;
+}
+
+.social-icons img {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  padding-left: 0px;
+  line-height: 25px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.footer_rights {
+  text-align: center;
+  border-top: 0.5px solid grey;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .heading {
+    border-left: 0px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .popular {
+    flex-direction: column;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact_info {
+    flex-direction: column;
+  }
+
+  .contact_info div {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  footer section {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 480px) {
+  .pills {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

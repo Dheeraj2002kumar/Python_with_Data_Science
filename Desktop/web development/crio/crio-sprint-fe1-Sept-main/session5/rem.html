@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- default font size of the root element is 16px -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font relative units - em</title>
+    <style>
+      .parent {
+        font-size: 10px;
+      }
+
+      /* relative to root elements font size */
+      /* rem = root elements font size */
+
+      .foo {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- font-size: 10px; -->
+    <div class="parent">
+      <!-- font-size: 2rem => 2 * 16px => 32px -->
+      <div class="foo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <!-- font-size: 2rem => 2 * 16px => 32px  -->
+        <div class="foo">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <!-- font-size: 2rem => 2 * 16px => 32px  -->
+          <div class="foo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+- Why do we need javaScript?
+- Compilation and Execution
+- Your First Program
+- Data Types 

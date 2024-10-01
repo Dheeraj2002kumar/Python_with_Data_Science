@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <style>
+      nav {
+        background-color: black;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: small;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 2px;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      ul {
+        display: none;
+      }
+
+      @media (min-width: 800px) {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          width: 160px;
+        }
+
+        img {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h2>Posts</h2>
+      <ul>
+        <li>Feed</li>
+        <li>Week</li>
+        <li>Month</li>
+      </ul>
+      <img
+        src="https://www.clipartmax.com/png/middle/36-365828_navbar-toggle-icon-menu-hamburger-png-white.png"
+        alt=""
+        height="30px"
+        width="30px"
+      />
+    </nav>
+  </body>
+</html>

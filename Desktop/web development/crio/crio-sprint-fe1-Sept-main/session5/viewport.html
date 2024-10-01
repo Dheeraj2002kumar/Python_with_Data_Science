@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viewport -> relative screen</title>
+    <style>
+      /* vmin & vmax -> refer the video */
+
+      /* relative to screen/ viewports width  */
+      .vw {
+        border: 2px solid red;
+        width: 50vw;
+      }
+
+      /* relative to screen/ viewports height  */
+      .vh {
+        border: 2px solid blue;
+        height: 50vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="vh">Viewport height</div>
+    <div class="vw">Viewport Width</div>
+  </body>
+</html>

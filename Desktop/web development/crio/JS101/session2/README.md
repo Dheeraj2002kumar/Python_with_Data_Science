@@ -1,0 +1,9 @@
+- Expressions
+- Mathematical Operators (+, -, *, /, %) and Precedence
+- Relational / Logical Operators (>, <, ===, !==, &&, ||)
+- If-Else statements - Part I
+- Introduction to Functions - Part I
+- Parametric & Non-Parametric
+- Calling a function
+- Returning values
+- Introduction to Crio Platform

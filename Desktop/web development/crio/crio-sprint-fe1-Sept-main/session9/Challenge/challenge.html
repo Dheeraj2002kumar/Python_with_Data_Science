@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge</title>
+    <style>
+      div {
+        border: 2px solid red;
+        width: 300px;
+
+        /* DO HERE */
+        position: relative;
+        border-radius: 50%;
+      }
+
+      .chaticon {
+        height: 100%;
+        width: 100%;
+      }
+
+      .messages {
+        width: 90px;
+        height: 90px;
+        background-color: orange;
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* DO HERE */
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="./ChatIcon.webp" alt="chaticon" class="chaticon" />
+      <div class="messages">
+        <span>3</span>
+      </div>
+    </div>
+  </body>
+</html>

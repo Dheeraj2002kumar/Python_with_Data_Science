@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descendant selector</title>
+    <style>
+      div p {
+        color: red;
+      }
+
+      div #unique {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- All the paragraph if present inside a div must have color red -->
+    <div>
+      <p>Not inside section</p>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas
+          repellendus, accusamus nulla sunt fugiat eius voluptatum fuga ullam
+          quibusdam velit consectetur consequuntur impedit quidem optio
+          obcaecati eligendi eos earum.
+        </p>
+      </section>
+    </div>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto illum
+      doloribus corrupti et aliquam dolores quisquam, mollitia id excepturi
+      culpa modi aut, porro consequuntur quibusdam vero. Facere pariatur ut
+      fugiat.
+    </p>
+    <div>
+      <p>lorem</p>
+    </div>
+    <div>
+      <h1 class="head">Heading</h1>
+    </div>
+    <div>
+      <h2 id="unique">Heading</h2>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitting Image</title>
+    <style>
+      div {
+        height: 50vh;
+        border: 1px solid red;
+        /* background-image: radial-gradient(
+          circle,
+          rgba(238, 174, 202, 1) 0%,
+          rgba(148, 187, 233, 1) 100%
+        ); */
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+
+        object-fit: cover;
+        /* object-fit: contain; */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        src="https://images.unsplash.com/photo-1632200786066-6d0ea88116b0?auto=format&fit=crop&w=934&q=80"
+        alt="img"
+      />
+    </div>
+  </body>
+</html>

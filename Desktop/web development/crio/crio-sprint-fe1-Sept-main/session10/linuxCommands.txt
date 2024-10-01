@@ -1,0 +1,19 @@
+ls
+ls -a
+pwd
+
+cd <Directory name>
+cd ../
+cd /home/dushu
+cd -
+
+mkdir 
+rmdir (for empty folders)
+rm <file name> (remove file)
+rm -rf <folder name> (removes non empty folders)
+
+cp <from here> <to there>
+mv <from here> <to there>
+
+cat
+nano <file name> 

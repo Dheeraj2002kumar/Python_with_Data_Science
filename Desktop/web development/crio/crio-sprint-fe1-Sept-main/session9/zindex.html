@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./default.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <style>
+    #parent {
+      background-color: #212121;
+      margin: auto;
+      width: 256px;
+      height: 256px;
+      /* Position properties below this line */
+      /* Position properties above this line */
+    }
+
+    section {
+      border: 2px solid red;
+    }
+
+    #child-1 {
+      width: 2rem;
+      height: 2rem;
+      background-color: #ff8a80;
+      /* Position properties below this line */
+      position: absolute;
+      z-index: 1;
+      margin-left: 1rem;
+      /* Position properties above this line */
+    }
+
+    #child-2 {
+      width: 2rem;
+      height: 2rem;
+      background-color: #69f0ae;
+      /* Position properties below this line */
+      position: absolute;
+      z-index: -1;
+
+      /* Position properties above this line */
+    }
+
+    #child-3 {
+      width: 2rem;
+      height: 2rem;
+      background-color: #ffee58;
+      /* Position properties below this line */
+
+      /* Position properties above this line */
+    }
+  </style>
+  <body>
+    <section>
+      <div id="parent">
+        <div id="child-1"><br /></div>
+        <div id="child-2"><br /></div>
+        <div id="child-3"><br /></div>
+      </div>
+    </section>
+  </body>
+</html>

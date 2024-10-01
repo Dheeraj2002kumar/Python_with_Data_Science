@@ -1,0 +1,19 @@
+/* element selector */
+h1 {
+  color: red;
+  background-color: cyan;
+}
+p {
+  color: purple;
+}
+
+/* id selector */
+#head {
+  color: green;
+}
+
+/* class selector */
+.customStyle {
+  color: red;
+  background-color: pink;
+}
