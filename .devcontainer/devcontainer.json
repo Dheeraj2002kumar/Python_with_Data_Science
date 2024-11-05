@@ -1,0 +1,6 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/deep-space-cartel/devcontainers-features/pip:1": {}
+	}
+}
